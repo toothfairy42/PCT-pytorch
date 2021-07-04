@@ -86,10 +86,11 @@ def train(args, io):
             logits = model(data)
             loss = criterion(logits, label)
             
-            to_write = str(epoch) + " " + str(idx) + " " + str(loss) + '\n'
-            f = open("original_out", "a")
-            f.write(to_write)
-            f.close()
+            to_write = "epoch " + str(epoch) + " index: " + str(idx) + " loss: " + str(loss) + '\n'
+            print(to_write)
+            # f = open("original_out", "a")
+            # f.write(to_write)
+            # f.close()
             # backward pass
             loss.backward()
 
