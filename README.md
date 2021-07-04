@@ -3,7 +3,7 @@ This is a Pytorch implementation of PCT: Point Cloud Transformer.
 
 Paper link: https://arxiv.org/pdf/2012.09688.pdf
 
-- only classification for now
+- classification & segmentation both with neighbor embeddings
 - runs on cpu (takes forever)
 
 ### Requirements
